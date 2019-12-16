@@ -3,7 +3,7 @@
 discussion panels about topics and with the experts themselves (as when they can afford to come online and reply).
 
 The Web Pages -
-1.	Our home page consists of a search bar where you can manually search for an interviewee or a field.
+1.	Our home page(index.php) consists of a search bar where you can manually search for an interviewee or a field.
 2.	The topics page shows the various fields that our interviewees belong to.
 3.	On clicking on any one of the fields the user is taken to the list of interviews in that field.
 4.	On clicking a particular professional you are taken to the interview page itself.
