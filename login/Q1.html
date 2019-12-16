@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <style>
+        #reply3{ background-color:#55d6aa;
+             margin: 10px; padding:10px;
+             border-radius:20px;
+             width:45%;
+
+        }
+        </style>
+    </head>    
+    <body>
+
+
+        <div>
+            <img src="back3_image.jpg" alt="Flowers in Chania" width="1360" height="350">
+        </div>  
+
+            <div class="post" style="background-color:#55d6aa;margin: 10px; padding:10px; border-radius:20px; width:45%;">
+                    <div class="wrap-ut pull-left">
+                        <div class="userinfo pull-left">
+                            <div class="avatar">
+                                <img src="images/avatar.jpg" alt="">
+                                <div class="status green">&nbsp;</div>
+                            </div>
+
+                            <div class="icons">
+                                <img src="images/icon1.jpg" alt=""><img src="images/icon4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="posttext pull-left">
+                            <h2 style="color:black">Quantum supremacy: Who will win the race--Google or IBM?</h2>
+                            <p style="color:white">Google claims to have used a quantum machine powered by their fully programmable Sycamore chip consisting of 54 qubits to successfully carry out an experimental computation in 200 seconds</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="postinfo pull-left">
+                        <div class="comments">
+                            <div class="commentbg">
+                                <div class="mark"></div>
+                            </div>
+
+                        </div>
+                        <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                        <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <button id="reply" style="float:right;background-color:black;color:white; height:30px; width:30px;">Reply</button>
+                </div>
+
+                
+
+
+
+                <script type="text/javascript">
+
+                        var reply=document.getElementById("reply");
+                        reply.addEventListener("click",reply_to,false);
+
+                        function reply_to()
+                        {
+                            let inp = document.createElement("textarea");
+                            var but=document.createElement("BUTTON");
+                            
+                            but.innerHTML="POST REPLY";
+                            document.body.appendChild(inp);
+                            document.body.appendChild(but);
+
+                            but.addEventListener("click",make_div,false);
+                            
+                            //but.addEventListener("Dblclick",remove_div,false)
+                            
+                        
+                        }    
+                         
+                        function make_div()
+                        {
+                            var div = document.createElement("DIV");
+                            var post=document.getElementsByTagName("textarea");
+                            //  alert(post[0].value);
+                            div.innerHTML = post[0].value;
+                            document.body.appendChild(div);
+                            div.id="reply3";
+                            var btn=createElement("BUTTON");
+                            btn.innerHTML="REPLY";
+
+                            //inp.remove();
+                            
+
+                        }
+
+                        // function remove_div()
+                        // {
+                        //     var in=document.getElementsByTagName("textarea");
+                        //     in[0].remove();
+                        // }
+
+                </script>
+
+     </body>   
+
+</html>

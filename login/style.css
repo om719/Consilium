@@ -1,0 +1,235 @@
+body{
+	margin:0;
+	/*background:#222;*/
+	font-family:'Work Sans',sans-serif;
+	font-weight:400;
+}
+
+::placeholder{
+	color: black;
+}
+
+.container{
+	width:100%;
+	margin:0 auto;
+	/*position: fixed;*/
+	/*overflow: hidden;
+	position: fixed;*/
+	/*background:#55d6aa;*/
+}
+
+header::after{
+content:'';
+display:table;
+clear:both;
+}
+
+header{
+	background:#55d6aa;
+}
+
+/*.logo{
+	float:left;
+	padding:10px 0;
+}*/
+
+.now{
+	margin-left: 450px;
+}
+nav{
+	float:left;
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+
+}
+
+nav li{
+	display:inline-block;
+	margin-left:30px;
+	padding-top:8px;
+	margin-bottom: 8px;
+	position:relative;
+}
+
+nav a{
+	color:#444;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*font-size: 14px;*/
+}
+
+nav a:hover{
+	color:#000;
+}
+
+nav a::before{
+	content: '';
+	display:block;
+	height:5px;
+	
+	background-color: #444;
+	/*position: absolute;*/
+	/*top:0.001;*/
+	width:0;
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+	width: 100%;
+}
+
+h2{
+
+	text-align: center;
+	/*font-size: 75px;*/
+}
+
+h1{
+	font-size: 75px;
+	text-align: center;
+	/*color: white;*/
+	color:#55d6aa;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+*/
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  background-color:white;
+}
+
+.searchTerm:focus{
+  color: white;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*#ab {
+	/*background-color: black;*/
+	/*margin: 0px;
+	overflow: hidden;*/
+	/*border-radius: 3px;*/
+
+/*}*/
+
+#about{
+	/*margin-top: 100px;*/
+	float: left;
+	/*float:left;*/
+}
+
+#contact {
+	/*float:right;*/
+	/*margin-left: 100px;*/
+	/*position: center;*/
+	float: right 25%;
+}
+
+.abd{
+	color: black;
+	text-decoration: none;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>internships</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <style>
+            .button {
+          border-radius: 4px;
+          background-color: #f4511e;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .button:hover span {
+          padding-right: 25px;
+        }
+
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+
+        fieldset {
+            border:solid;
+            border-radius: 15px;
+            background-color: #3eddad;
+            /*height: 30px;*/
+        }
+        </style>
+    </head>
+
+    <body style="background-color: #222;">
+        <header>
+        <div class="container">
+        <!-- <img src="" alt="logo" class="logo"> -->
+            <nav>
+                <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="trash.html">Topics</a></li>
+        <li><a href="Discussion_Forum.php">Message Boards</a></li>
+        <li><a href="courses.html">Internships</a></li>
+        <li><a href="internships.html">Courses</a></li>
+        <li><a href="a">                                                                                                                                     </a></li>
+        <li class="now"><a href="lg.html">Login</a></li>
+        <li ><a href="sg.html">Signup</a></li>
+      </ul>
+            </nav>
+        </div>
+        </header>
+        <br>
+        <h2 style="color: white">Hiring interns now:</h2>
+        <button onclick="newintern()" style="background-color:black; color:"white";">Add an Internship</button>
+        <p id="requirements"></p>
+
+        <fieldset>
+          <text>Specialization needed:Front End Web Development </text><br>
+          <text>Minimum degree:Undergraduation</text><br>
+          <text>Stipend:7000</text><br>
+        </fieldset><br>
+
+        <fieldset>
+          <text>Specialization needed:</text><br>
+          <text>Minimum degree:</text><br>
+          <text>Stipend:</text><br>
+        </fieldset><br>
+
+        <fieldset>
+          <text>Specialization needed:</text><br>
+          <text>Minimum degree:</text><br>
+          <text>Stipend:</text><br>
+        </fieldset><br>
+
+        <fieldset>
+          <text>Specialization needed:</text><br>
+          <text>Minimum degree:</text><br>
+          <text>Stipend:</text><br>
+        </fieldset><br>
+
+        <fieldset>
+          <text>Specialization needed:</text><br>
+          <text>Minimum degree:</text><br>
+          <text>Stipend:</text><br>
+        </fieldset><br>
+
+        <fieldset>
+          <text>Specialization needed:</text><br>
+          <text>Minimum degree:</text><br>
+          <text>Stipend:</text><br>
+        </fieldset><br>
+
+        <fieldset>
+          <text>Specialization needed:</text><br>
+          <text>Minimum degree:</text><br>
+          <text>Stipend:</text><br>
+        </fieldset><br>
+
+        <fieldset>
+          <text>Specialization needed:</text><br>
+          <text>Minimum degree:</text><br>
+          <text>Stipend:</text><br>
+        </fieldset><br>
+
+        </div>
+        <script>
+            function newintern(){
+            var text =" specialization needed:"+"\n"+"Minimum degree:"+"\n "+" Stipend: ";
+
+
+                var node = document.createElement("fieldset");
+                var child = document.createTextNode(text);
+                node.appendChild(child);
+                document.body.appendChild(node);
+                var brtag = document.createElement("br");
+                document.body.appendChild(brtag);
+
+          }
+        </script>
+
+    </body>
+</html>

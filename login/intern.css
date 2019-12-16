@@ -1,0 +1,37 @@
+p{
+	float: right;
+}
+
+#machine{
+	margin-top: 10px;
+}
+
+#web{
+	margin-right: 238px;
+}
+
+#blender{
+	margin-right:100px;
+}
+
+#ai{
+	margin-right: 337px;
+}
+
+.crs{
+	width:50%;
+	margin-left: 290px;
+	background-color: #55d6aa;
+	margin-top: 30px;
+	padding:20px;
+	border-radius: 20px;
+}
+
+img{
+	margin-left: 80px;
+}
+
+a{
+	color: #222;
+
+}
